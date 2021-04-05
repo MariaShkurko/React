@@ -24,7 +24,7 @@ for (let i = 0; i < command.length; i++) {
 const calcCash = (own = 0, ...arg) => {
 	const everyCash = arg;
 	let total = own;
-	everyCash.forEach(item => {
+	everyCash[0].forEach(item => {
 		total += +item;
 	});
 	return total;
